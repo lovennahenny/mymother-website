@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Experience</title>
+<link rel="shortcut icon" type="image/png" 
+href="love-letter.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 10px 0 0;
+            border-top: 1px solid #ddd;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            color: #ff5722;
+        }
+        main ul {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        main ul li {
+            margin: 10px 0;
+        }
+        .styled-table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #ffe6e9;
+        }
+        .styled-table th {
+            background-color: #ff5722;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+        .styled-table td {
+            padding: 15px;
+            text-align: left;
+            color: #333;
+        }
+        .styled-table tr:nth-child(even) {
+            background-color: #ffe6e9;
+        }
+        .styled-table tr: hover {
+            background-color: #ffe7e6;
+            transition: background-color 0.3s;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="datetime"></div>
+     <script>
+        function updateDateTime() {
+            const now = new Date(); // Get the current date and time
+            const date = now.toLocaleDateString(); // Format the date
+            const time = now.toLocaleTimeString(); // Format the time
+            document.getElementById('datetime').innerText = `${date} ${time}`; // Display the result
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Call the function immediately to avoid initial delay
+        updateDateTime();
+    </script>
+    <header>
+        <h1>For All She Does, Mom</h1>
+        <nav>
+            <ul>
+                <li><a href="testhome.html">Home</a></li>
+                <li><a href="testintro.html">Introduction</a></li>
+                <li><a href="testabout.html">About Her</a></li>
+                <li><a href="testeduexpe.html">Education & Experience</a></li>
+                <li><a href="testgallery.html">Gallery</a></li>
+                <li><a href="testcontact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>  
+        <h2>Education & Experience</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Education</td>
+                        <td><p> Sekolah Rendah Mukah (1999)</p>
+                            <p> Sekolah Menengah Kebangsaan Three Rivers, Mukah (1996)</p> </td>
+                    </tr>
+                    <tr>
+                        <td>Working Experience</td>
+                        <td><p>Kitchen Helper at Bakery - Baker (2019-2020)</p>
+                            <p>Chef at Primary School - Cooking for students at primary school (2021-2023)</p> </td>
+                    </tr>       
+                    </tbody>
+            </table>
+   
+        </section>
+    </main>
+<br>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2025 Created with love, Lovenna Henny. This requirement needs to fulfill subject IMD318. </p>
+    </footer>
+</body>
+</html>

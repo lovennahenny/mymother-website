@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+<link rel="shortcut icon" type="image/png" href="love-letter.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 10px 0 0;
+            border-top: 1px solid #ddd;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+        main {
+            padding: 0;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            width: calc(33.333% - 20px);
+            max-width: 400px;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-row img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="datetime"></div>
+     <script>
+        function updateDateTime() {
+            const now = new Date(); // Get the current date and time
+            const date = now.toLocaleDateString(); // Format the date
+            const time = now.toLocaleTimeString(); // Format the time
+            document.getElementById('datetime').innerText = `${date} ${time}`; // Display the result
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Call the function immediately to avoid initial delay
+        updateDateTime();
+    </script>
+    <header>
+        <h1>For All She Does, Mom</h1>
+        <nav>
+            <ul>
+                <li><a href="testhome.html">Home</a></li>
+                <li><a href="testintro.html">Introduction</a></li>
+                <li><a href="testabout.html">About Her</a></li>
+                <li><a href="testeduexpe.html">Education & Experience</a></li>
+                <li><a href="testgallery.html">Gallery</a></li>
+                <li><a href="testcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>A Wife | A Mother | A Hero</h2>
+<p><strong>My mother name is Lika Anak Bantin</p>
+<p>This website is dedicated to my wonderful mother, celebrating her life, love, and achievements.</p>
+<br>
+<br>
+ <div class="image-row">
+                <img src="pic 1.jpg" alt="Image 1">
+                <img src="intro2.jpg" alt="Image 2">
+                <img src="intro3.jpg" alt="Image 3">
+            </div>
+<br>
+    </section>
+    </main>
+<br>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2025 Created with love, Lovenna Henny. This requirement needs to fulfill subject IMD318.</p>
+    </footer>
+</body>
+</html>

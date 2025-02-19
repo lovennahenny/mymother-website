@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+<link rel="shortcut icon" type="image/png" href="love-letter.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 10px 0 0;
+            border-top: 1px solid #ddd;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            color: #ff5722;
+        }
+.timeline {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: #ff5722;
+        transform: translate(-50%);
+    }
+
+    .timeline-item {
+        position: relative;
+        width: calc(50% - 20px);
+        padding: 10px 20px;
+        background: #ffe6e9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        align-self: flex-start;
+    }
+
+    .timeline-item:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: #ff5722;
+        border-radius: 50%;
+        top: 10px;
+        left: -7.5px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(even)::before {
+        left: auto;
+        right: -7.5px;
+        transform: translateX(50%);
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em;
+        color: #ff5722;
+        margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="datetime"></div>
+     <script>
+        function updateDateTime() {
+            const now = new Date(); // Get the current date and time
+            const date = now.toLocaleDateString(); // Format the date
+            const time = now.toLocaleTimeString(); // Format the time
+            document.getElementById('datetime').innerText = `${date} ${time}`; // Display the result
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Call the function immediately to avoid initial delay
+        updateDateTime();
+    </script>
+    <header>
+        <h1>For All She Does, Mom</h1>
+        <nav>
+            <ul>
+               
+                <li><a href="testhome.html">Home</a></li>
+                <li><a href="testintro.html">Introduction</a></li>
+                <li><a href="testabout.html">About Her</a></li>
+                <li><a href="testeduexpe.html">Education & Experience</a></li>
+                <li><a href="testgallery.html">Gallery</a></li>
+                <li><a href="testcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <section>
+            <h2>Her Story Begins Here</h2>
+            <p>Welcome to the introduction page. Here, you will find an overview of my mother’s life and her incredible journey.</p>
+            <br>
+<center>
+<h3> I Want It That Way by Backstreet Boys <h3>
+</center>
+<center>
+<p> Reader may read while listening to the song </p>
+</center>
+<br>
+<center><audio controls>
+<source src="iwantitthatway.ogg" type="audio/ogg">
+<source src="iwantitthatway.mp3" type="audio/mpeg">
+</audio></center>
+<br>
+<br>
+         <div class="timeline">
+    <div class="timeline-item">
+        <h3>1983</h3>
+        <p>Born in a small town, Mukah where her journey began.</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2000</h3>
+        <p>Completed her education and started working.</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2003</h3>
+        <p>Married and began a family.</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2004</h3>
+        <p>Gave birth to her first daughter.</p>
+    </div>
+    <div class="timeline-item">
+        <h3>2008</h3>
+        <p>Get lucky gave birth to a second daughter.</p>
+    </div>
+ <div class="timeline-item">
+        <h3>2012</h3>
+        <p>Finally, the one that the family always waited for gave birth to a son.</p>
+    </div>
+ <div class="timeline-item">
+        <h3>2024</h3>
+        <p>Celebrated her 41th birthday this year.</p>
+    </div>
+
+</div>
+        </section>
+    </main>
+
+<br>
+<br>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2025 Created with love, Lovenna Henny. This requirement needs to fulfill subject IMD318.</p>
+    </footer>
+</body>
+</html>
